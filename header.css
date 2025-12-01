@@ -1,0 +1,139 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= Header Shopee ================= */
+#shopee-header {
+    width: 100%;
+    background: #ff5a00;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Topbar --- */
+#shopee-header .topbar {
+    background:#ee4d2d;
+    color:#fff;
+    font-size:14px;
+}
+#shopee-header .topbar .container {
+    max-width:1200px;
+    margin:0 auto;
+    padding:6px 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#shopee-header .topbar a {
+    color:#fff;
+    text-decoration:none;
+}
+#shopee-header .topbar a:hover {
+    text-decoration:underline;
+}
+
+/* --- Header chính --- */
+#shopee-header .header {
+    background:#ee4d2d;
+    border-bottom:1px solid #ee4d2d;
+}
+#shopee-header .header .container {
+    max-width:1200px;
+    margin:0 auto;
+    padding:14px 16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+#shopee-header .logo img {
+    height:44px;
+    width:auto;
+}
+
+/* --- Search --- */
+#shopee-header .search-wrap { flex:1; display:flex; align-items:center; }
+#shopee-header .search-box {
+    width:100%;
+    display:flex;
+    border-radius:6px;
+    overflow:hidden;
+    background:#fff;
+}
+#shopee-header .search-box input {
+    flex:1;
+    padding:10px 14px;
+    border:0;
+    outline:none;
+    font-size:14px;
+}
+#shopee-header .search-box button {
+    background: #ff5a00; /* cam */
+    color: #fff; /* icon trắng */
+    border: 0;
+    padding: 0 16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:16px;
+}
+#shopee-header .search-box button:hover {
+    background: #e14b00;
+}
+
+/* --- Icons & User --- */
+#shopee-header .icons { display:flex; gap:12px; align-items:center; }
+#shopee-header .icon-btn { position:relative; padding:8px 12px; border-radius:6px; cursor:pointer; }
+#shopee-header .icon-btn span.badge {
+    position:absolute;
+    top:2px;
+    right:4px;
+    background:red;
+    color:white;
+    border-radius:50%;
+    font-size:11px;
+    padding:2px 5px;
+}
+
+/* --- User dropdown --- */
+#shopee-header .user-btn { position: relative; padding-right: 14px; cursor: pointer; display:flex; align-items:center; gap:6px; }
+#shopee-header .user-btn::after {
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    border-top:6px solid white;
+}
+#shopee-header .dropdown-menu {
+    position:absolute;
+    top:20px;
+    left:0;
+    background:#fff;
+    color:#000;
+    min-width:140px;
+    border-radius:6px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    border:1px solid #eee;
+    display:none;
+    flex-direction:column;
+    padding:6px 0;
+    z-index:1000;
+}
+#shopee-header .dropdown:hover .dropdown-menu { display:flex; }
+#shopee-header .dropdown-menu a {
+    padding:8px 14px;
+    font-size:13px;
+    text-decoration:none;
+    color:#000;
+    transition:.25s;
+}
+#shopee-header .dropdown-menu a:hover {
+    background:#e3f2fd;
+    color:#1cedaeff;
+    text-decoration:none;
+}
